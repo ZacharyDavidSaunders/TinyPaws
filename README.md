@@ -3,6 +3,9 @@
 ## Overview
 TinyPaws is a TinyML (Tiny Machine Learning) project developed for the "Advanced Topics In Signal & Image Processing" course at the University of Washington's graduate computing department. The project focuses on real-time dog bark detection using an Arduino microcontroller. Once a bark is detected, TinyPaws emits a sound, shines a light, and sends a push notification to the user's device, providing an alert for potential intruders or disturbances.
 
+## Demo
+https://github.com/ZacharyDavidSaunders/TinyPaws/assets/29029748/17b99695-ccc8-43f9-a272-94d18c31973f
+
 ## Features
 - Real-time dog bark detection using TinyML on an Arduino.
 - Audio feedback: emits a sound upon detecting a bark.
