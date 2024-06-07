@@ -10,7 +10,7 @@ TinyPaws is a TinyML (Tiny Machine Learning) project developed for the "Advanced
 - Notification system: sends a push notification to the user's device.
 
 ## Technologies Used
-- Arduino: Used as the microcontroller platform for running the TinyML model and controlling the hardware components.
+- Arduino: Used as the microcontroller platform for running the TinyML model and controlling the hardware components. The Arduino Nano 33 BLE Sense Lite was used for this project. 
 - TensorFlow Lite for Microcontrollers: Used for deploying the machine learning model on the Arduino.
 - Arduino IDE: Integrated Development Environment for writing and uploading code to the Arduino board.
 - Python: Used for preprocessing audio data and training the machine learning model.
@@ -22,15 +22,17 @@ TinyPaws is a TinyML (Tiny Machine Learning) project developed for the "Advanced
 `git clone https://github.com/ZacharyDavidSaunders/TinyPaws`
 
 2. Install the necessary Arduino libraries.
-3. Upload the Arduino sketch to your Arduino board.
+3. Upload the Arduino sketch to your Arduino board. Specifically, go to TinyPaws/BarkNet_inferencing/examples/nano_ble33_sense/nano_ble33_sense_microphone_continuous/nano_ble33_sense_microphone_continuous.ino and upload to the Arduino. 
 4. Set up the necessary dependencies for the push notification service.
 5. Run the Python scripts for preprocessing audio data and training the model.
 6. Create a pushover account, download the mobile app, and add your information to ComputerBluetooth.py 
 
 ## Usage
 1. Power on the Arduino board.
-2. Once a dog bark is detected, TinyPaws will emit a sound, shine a light, and send a push notification to the user's device.
-3. Monitor the push notification on your device for alerts about potential disturbances.
+2. Issue the 'detect' command on the serial monitor to start bark detection.
+3. Choose one of the available detection modes: p, l, or b. 
+4. Play a dog bark sound or simulate a bark. Once a dog bark is detected, TinyPaws will emit a sound, shine a light, and send a push notification to the user's device.
+5. Monitor the push notification on your device for alerts about potential disturbances.
 
 ## Contributors
 - Bassam Halabiya
